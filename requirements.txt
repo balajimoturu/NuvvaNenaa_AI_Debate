@@ -1,0 +1,5 @@
+openai #To use OPEN AI API
+google-generativeai #To use Gen AI API of Gemini
+streamlit
+python-dotenv
+tiktoken
