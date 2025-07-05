@@ -2,7 +2,7 @@ import streamlit as st
 from openai_wrapper import get_completion
 from agent_logic import build_agent_prompt1, build_agent_prompt2, format_statement
 
-st.set_page_config(page_title="Nuvva Nenaa", layout="centered")
+st.set_page_config(page_title="Nuvva Nenaa - AIs Debate", layout="centered")
 st.title("NUVVA NENAA - AI DEBATE ARENA 🤖")
 
 if "messages" not in st.session_state:
@@ -14,8 +14,8 @@ if "summary_shown" not in st.session_state:
 
 with st.form("setup"):
     topic = st.text_input("📝 Enter Debate Topic")
-    agent1 = st.text_input("🎭 Enter 1st Agent name & role (seperated with '-')", "Chill Chandler - Cool and Calm")
-    agent2 = st.text_input("🎯 Enter 2nd Agent name & role (seperated with '-')", "Visionary Rage - Logical and sharp")
+    agent1 = st.text_input("🎭 Enter 1st Agent name & role (seperated with '-')", "Bright Byte - Chill and Inspiring")
+    agent2 = st.text_input("🎯 Enter 2nd Agent name & role (seperated with '-')", "Critique Core - Sharp and Rational")
     submitted = st.form_submit_button("Start Debate 🔥")
 
 if submitted and topic:
