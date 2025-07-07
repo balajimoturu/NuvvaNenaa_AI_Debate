@@ -1,0 +1,45 @@
+.agent-card {
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.agent1-card {
+    background-color: #004080; /* deep blue */
+}
+
+.agent2-card {
+    background-color: #B22222; /* firebrick red */
+}
+
+.chat-bubble {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+
+.chat1 {
+    background-color: #0059b3;  /* strong blue */
+    width: 90%;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    border-left: 6px solid #3498DB;
+}
+
+.chat2 {
+    background-color: #cc3300;  /* strong orange-red */
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+    border-right: 6px solid #E74C3C;
+}

@@ -7,7 +7,7 @@ if USE_GEMINI:
     genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
     model = genai.GenerativeModel("gemini-pro")
 
-    def get_completion(messages, max_tokens=200):
+    def get_completion(messages, max_tokens=90):
         try:
             user_prompt = "\n".join([m["content"] for m in messages])
             response = model.generate_content(user_prompt)
@@ -27,7 +27,7 @@ else:
         enc = tiktoken.encoding_for_model(model)
         return len(enc.encode(text))
 
-    def get_completion(messages, max_tokens=200):
+    def get_completion(messages, max_tokens=150):
         try:
             response = client.chat.completions.create(
                 model="gpt-3.5-turbo",
